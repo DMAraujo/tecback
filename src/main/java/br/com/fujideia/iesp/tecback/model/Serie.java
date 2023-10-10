@@ -21,5 +21,5 @@ public class Serie {
     private String sinopse;
 
     @ManyToOne
-    private String genero;
+    private Genero genero;
 }
