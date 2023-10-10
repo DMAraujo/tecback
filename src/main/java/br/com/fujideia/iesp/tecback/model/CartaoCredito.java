@@ -7,16 +7,17 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "tb_usuario")
-public class Usuario {
+@Table(name = "tb_cartao")
+public class CartaoCredito {
 
     @Id
     @GeneratedValue
     private Integer id;
 
-    private String nome;
-    private String email;
+    private String numero;
+    private String titular;
+    @Column(name = "ds_validade", length = 500)
+    private String validade;
 
-    @ManyToOne
-    private CartaoCredito cartaoCredito;
 }
+
