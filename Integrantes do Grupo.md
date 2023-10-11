@@ -2,7 +2,7 @@
 
 * ### Diego Moura Araujo
 * ### Ítalo Ricardo Amorim Nunes Filho
-* ### Roberto Figueiredo Guimarâes Maia
+* ### Roberto Figueiredo Guimarães Maia
 * ### Ryan Honório Urtiga
 
 
