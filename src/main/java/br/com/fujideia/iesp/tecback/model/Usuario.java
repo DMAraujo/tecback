@@ -18,6 +18,7 @@ public class Usuario {
     private Integer id;
     @NotBlank
     private String nome;
+    @Email
     private String email;
     @CPF
     private String cpf;
