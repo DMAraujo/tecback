@@ -23,7 +23,7 @@ public class AvaliacaoFilmeService {
         return repository.findById(id).orElse(null);
     }
 
-    public AvaliacaoFilme salvarAvaliacaoSerie(AvaliacaoFilme avaliacaoFilme) {
+    public AvaliacaoFilme salvarAvaliacaoFilme(AvaliacaoFilme avaliacaoFilme) {
         return repository.save(avaliacaoFilme);
     }
 

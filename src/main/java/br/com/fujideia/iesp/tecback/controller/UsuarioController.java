@@ -5,6 +5,7 @@ package br.com.fujideia.iesp.tecback.controller;
 import br.com.fujideia.iesp.tecback.model.Filme;
 import br.com.fujideia.iesp.tecback.model.Usuario;
 import br.com.fujideia.iesp.tecback.service.UsuarioService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,7 @@ public class UsuarioController {
     private UsuarioService service;
 
     @PostMapping
-    public ResponseEntity<Usuario> salvar(@RequestBody Usuario usuario){
+    public ResponseEntity<Usuario> salvar(@RequestBody @Valid Usuario usuario){
         usuario = service.salvar(usuario);
         return ResponseEntity.ok(usuario);
     }

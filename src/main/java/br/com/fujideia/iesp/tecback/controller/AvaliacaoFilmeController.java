@@ -17,8 +17,8 @@ public class AvaliacaoFilmeController {
 
 
     @PostMapping
-    public ResponseEntity<AvaliacaoFilme> salvarAvaliacaoSerie(@RequestBody AvaliacaoFilme avaliacaoFilme) {
-        avaliacaoFilme = service.salvarAvaliacaoSerie(avaliacaoFilme);
+    public ResponseEntity<AvaliacaoFilme> salvarAvaliacaoFilme(@RequestBody AvaliacaoFilme avaliacaoFilme) {
+        avaliacaoFilme = service.salvarAvaliacaoFilme(avaliacaoFilme);
         return ResponseEntity.ok(avaliacaoFilme);
     }
 
